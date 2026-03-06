@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="e00c51c4832b3a1069b5b955eeaad3bf" sys_domain="global" table="x_1759267_wrm_reservation_tracker" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 23:22:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f40c91c4832b3a1069b5b955eeaad31c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1759267_wrm_reservation_tracker" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">e00c51c4832b3a1069b5b955eeaad3bf</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">4795158883e73a1069b5b955eeaad32a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 23:22:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 23:22:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>700c91c4832b3a1069b5b955eeaad31e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1759267_wrm_reservation_tracker" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">e00c51c4832b3a1069b5b955eeaad3bf</sys_ui_form>
+            <sys_ui_section caption="Details" display_value="Details" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">a00c51c4832b3a1069b5b955eeaad3bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 23:22:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 23:22:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>380c91c4832b3a1069b5b955eeaad331</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1759267_wrm_reservation_tracker" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">e00c51c4832b3a1069b5b955eeaad3bf</sys_ui_form>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">2c0c51c4832b3a1069b5b955eeaad3bd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 23:22:54</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1759267_wrm_reservation_tracker</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-05 23:22:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e00c51c4832b3a1069b5b955eeaad3bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1759267_wrm_reservation_tracker</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+            <sys_update_name>sys_ui_form_sections_e00c51c4832b3a1069b5b955eeaad3bf</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-05 23:22:54</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_1759267_wrm_workspace_options" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_1759267_wrm_workspace_options</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-04 03:00:33</sys_created_on>
+            <sys_id>5daaf713839ff21069b5b955eeaad344</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+            <sys_update_name>sys_choice_x_1759267_wrm_workspace_options_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-04 03:00:33</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Available</label>
+            <language>en</language>
+            <name>x_1759267_wrm_workspace_options</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-04 03:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1aaf713839ff21069b5b955eeaad344</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-04 03:00:33</sys_updated_on>
+            <value>available</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Unavailable</label>
+            <language>en</language>
+            <name>x_1759267_wrm_workspace_options</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-04 03:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d1aaf713839ff21069b5b955eeaad347</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-04 03:00:33</sys_updated_on>
+            <value>unavailable</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Under maintenance</label>
+            <language>en</language>
+            <name>x_1759267_wrm_workspace_options</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-04 03:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>59aaf713839ff21069b5b955eeaad348</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-04 03:00:33</sys_updated_on>
+            <value>under_maintenance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Decommissioned</label>
+            <language>en</language>
+            <name>x_1759267_wrm_workspace_options</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-04 03:00:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ddaaf713839ff21069b5b955eeaad349</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-04 03:00:33</sys_updated_on>
+            <value>decommissioned</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
