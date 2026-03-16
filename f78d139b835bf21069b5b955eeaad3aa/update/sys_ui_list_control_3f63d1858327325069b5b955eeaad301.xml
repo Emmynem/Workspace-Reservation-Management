@@ -15,7 +15,7 @@
         <list_edit_insert_row>false</list_edit_insert_row>
         <list_edit_ref_qual_tag/>
         <list_edit_type/>
-        <name>x_1759267_wrm_reservation_tracker</name>
+        <name>x_1759267_wrm_workspace_options</name>
         <new_condition/>
         <new_roles/>
         <omit_columns_if_empty>false</omit_columns_if_empty>
@@ -27,23 +27,23 @@
         <omit_filters>false</omit_filters>
         <omit_if_empty>false</omit_if_empty>
         <omit_links>false</omit_links>
-        <omit_new_button>false</omit_new_button>
+        <omit_new_button>true</omit_new_button>
         <omit_related_list_count>false</omit_related_list_count>
-        <related_list/>
+        <related_list>x_1759267_wrm_workspace_maintenance.workspace</related_list>
         <sys_class_name>sys_ui_list_control</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-06 00:21:12</sys_created_on>
+        <sys_created_on>2026-03-09 01:19:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>c6496d4083ab3a1069b5b955eeaad399</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>x_1759267_wrm_reservation_tracker</sys_name>
+        <sys_id>3f63d1858327325069b5b955eeaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1759267_wrm_workspace_options</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
-        <sys_update_name>sys_ui_list_control_c6496d4083ab3a1069b5b955eeaad399</sys_update_name>
+        <sys_update_name>sys_ui_list_control_3f63d1858327325069b5b955eeaad301</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-16 19:57:12</sys_updated_on>
+        <sys_updated_on>2026-03-09 01:19:28</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

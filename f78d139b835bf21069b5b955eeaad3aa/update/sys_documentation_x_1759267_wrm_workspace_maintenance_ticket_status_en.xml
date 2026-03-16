@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="number" label="Number" language="en" table="x_1759267_wrm_workspace_options">
+    <sys_documentation element="ticket_status" label="Ticket status" language="en" table="x_1759267_wrm_workspace_maintenance">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>number</element>
+            <element>ticket_status</element>
             <help/>
             <hint/>
-            <label>Number</label>
+            <label>Ticket status</label>
             <language>en</language>
-            <name>x_1759267_wrm_workspace_options</name>
-            <plural>Numbers</plural>
+            <name>x_1759267_wrm_workspace_maintenance</name>
+            <plural>Ticket status</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 02:42:16</sys_created_on>
-            <sys_id>7176bfd7835ff21069b5b955eeaad331</sys_id>
+            <sys_created_on>2026-03-08 21:11:22</sys_created_on>
+            <sys_id>17aa5085836ffe1069b5b955eeaad34e</sys_id>
             <sys_mod_count>1</sys_mod_count>
-            <sys_name>Number</sys_name>
+            <sys_name>Ticket status</sys_name>
             <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
             <sys_policy/>
             <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
-            <sys_update_name>sys_documentation_x_1759267_wrm_workspace_options_number_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1759267_wrm_workspace_maintenance_ticket_status_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-16 20:10:01</sys_updated_on>
+            <sys_updated_on>2026-03-08 21:15:17</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
