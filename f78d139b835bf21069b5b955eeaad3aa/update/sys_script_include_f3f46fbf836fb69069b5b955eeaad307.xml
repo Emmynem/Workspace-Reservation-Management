@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1759267_wrm.GetWorkspaceLocation</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Function to get the location of a workspace via the sys_id</description>
+        <mobile_callable>false</mobile_callable>
+        <name>GetWorkspaceLocation</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetWorkspaceLocation = Class.create();
+GetWorkspaceLocation.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getWorkspaceLocation: function (){
+		// Get the sys ID of the location 
+		var workspaceId = this.getParameter("sysparm_workspace_id");
+		
+		var workspaceGr = new GlideRecord("x_1759267_wrm_workspace_options");
+		
+        if (workspaceGr.get("sys_id", workspaceId)) {
+            var value = workspaceGr.getValue("location");
+            return value; // return the source field value
+        }
+        return '';
+	},
+    type: 'GetWorkspaceLocation'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 01:29:00</sys_created_on>
+        <sys_id>f3f46fbf836fb69069b5b955eeaad307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetWorkspaceLocation</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sys_script_include_f3f46fbf836fb69069b5b955eeaad307</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-18 01:29:00</sys_updated_on>
+    </sys_script_include>
+</record_update>
