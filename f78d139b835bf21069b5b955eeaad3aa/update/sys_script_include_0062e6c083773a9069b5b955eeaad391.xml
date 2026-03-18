@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1759267_wrm.discordNotification</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>discordNotification</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var discordNotification = Class.create();
+discordNotification.prototype = {
+    initialize: function() {
+		this.webhookUrl = gs.getProperty("x_1759267_wrm.discord.webhook_url");
+    },
+	sendMessage: function(message, emoji) {
+		try {
+			
+			// Instantiate request with Discord API channel webhook
+			var request = new sn_ws.RESTMessageV2(); 
+			request.setEndpoint(this.webhookUrl);
+			request.setHttpMethod('POST');
+			request.setRequestHeader('Content-Type', 'application/json');
+
+			var payload = { content: `${emoji} ${message}` }; 
+			request.setRequestBody(JSON.stringify(payload)); 
+
+			request.execute();
+
+			gs.info("Discord | Status Code: " + response.getStatusCode());
+			return(response.getStatusCode());
+
+		} catch(err) {
+			gs.error("Discord | Error: " + err.message);
+			return '';
+		}
+	}, 
+    type: 'discordNotification'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-18 16:10:18</sys_created_on>
+        <sys_id>0062e6c083773a9069b5b955eeaad391</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>discordNotification</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sys_script_include_0062e6c083773a9069b5b955eeaad391</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-18 23:37:58</sys_updated_on>
+    </sys_script_include>
+</record_update>
