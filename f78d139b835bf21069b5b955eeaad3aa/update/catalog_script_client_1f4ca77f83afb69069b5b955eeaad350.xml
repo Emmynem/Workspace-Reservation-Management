@@ -31,9 +31,86 @@
 
     ga.getXMLAnswer(function(response) {
         if (response) {
-            g_form.setValue('location', response);
+            g_form.setValue('location', JSON.parse(response).location);
+			var image_tag_with_url = '<img src="https://dev184546.service-now.com/' + JSON.parse(response).image + '.iix" style="max-width:300px;"/>';
+
+			g_form.setValue('workspace_preview', image_tag_with_url);
         }
     });
+
+	//  PROBABLY USE THIS METHOD BELOW INSTEAD FOR PRODUCTION
+	// ServiceNow Catalog Item where selecting a value in a reference variable automatically displays an image related to that selection. This is doable using variable dependencies and a bit of client-side scripting.
+	// Here’s a clean, adaptable approach:
+
+	// 1. Prepare Your Data
+
+	// Create a table (or use an existing one) that stores:
+
+	// Reference field (e.g., Product, Location, etc.)
+	// Image URL (can be an attachment link or a sys_attachment reference)
+
+
+	// Ensure the reference variable in your catalog item points to this table.
+
+
+	// 2. Add Variables to the Catalog Item
+
+	// Reference Variable: The user selects from this list.
+	// Image Display Variable: A Single Line Text or Image/HTML variable to hold the image URL or HTML tag.
+
+	// Mark it as read-only and not mandatory.
+	// If using HTML, set the Type to "Macro" or "Label" with HTML enabled.
+
+
+
+
+	// 3. Client Script (onChange)
+	// Here’s an example Catalog Client Script:
+	// Javascriptfunction onChange(control, oldValue, newValue, isLoading) {
+	// 	if (isLoading || newValue === '') {
+	// 		g_form.setValue('image_variable', '');
+	// 		return;
+	// 	}
+
+	// 	// GlideAjax call to fetch image URL from server
+	// 	var ga = new GlideAjax('GetImageForReference');
+	// 	ga.addParam('sysparm_name', 'getImage');
+	// 	ga.addParam('sysparm_ref_sys_id', newValue);
+	// 	ga.getXMLAnswer(function(response) {
+	// 		if (response) {
+	// 			var imgHTML = '<img src="' + response + '" style="max-width:300px;"/>';
+	// 			g_form.setValue('image_variable', imgHTML);
+	// 		} else {
+	// 			g_form.setValue('image_variable', '');
+	// 		}
+	// 	});
+	// }
+
+
+	// 4. Script Include (Server-Side)
+	// Make it Client Callable:
+	// Javascriptvar GetImageForReference = Class.create();
+	// GetImageForReference.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	// 	getImage: function() {
+	// 		var sysId = this.getParameter('sysparm_ref_sys_id');
+	// 		var rec = new GlideRecord('your_table_name');
+	// 		if (rec.get(sysId) && rec.image_url) {
+	// 			return rec.image_url.toString();
+	// 		}
+	// 		return '';
+	// 	}
+	// });
+
+
+	// 5. Result
+
+	// When the user selects a value in the reference variable, the script fetches the related image URL and displays it instantly in the catalog form.
+	// This works in both Service Portal and Native UI if HTML rendering is enabled for the variable.
+
+
+	// If you’d like, I can also give you a no-code alternative using UI Policies + Variable Sets so you don’t have to write JavaScript at all.
+	// Do you want me to prepare that version too?
+
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -41,7 +118,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1f4ca77f83afb69069b5b955eeaad350</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Auto-Populate Location from workspace</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -49,7 +126,7 @@
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_update_name>catalog_script_client_1f4ca77f83afb69069b5b955eeaad350</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-18 01:48:35</sys_updated_on>
+        <sys_updated_on>2026-04-01 03:27:34</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
