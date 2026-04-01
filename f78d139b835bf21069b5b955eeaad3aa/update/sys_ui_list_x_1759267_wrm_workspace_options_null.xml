@@ -3,92 +3,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>a8e4cc2783dff21069b5b955eeaad347</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>905721c48380c71469b5b955eeaad381</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>workspace_name</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>20e4cc2783dff21069b5b955eeaad348</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>105721c48380c71469b5b955eeaad382</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>workspace_type</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>a4e4cc2783dff21069b5b955eeaad348</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>945721c48380c71469b5b955eeaad382</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>location</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>2ce4cc2783dff21069b5b955eeaad348</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>1c5721c48380c71469b5b955eeaad382</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>status</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>a0e4cc2783dff21069b5b955eeaad349</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>905721c48380c71469b5b955eeaad383</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>max_occupancy</element>
-            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">24e4482783dff21069b5b955eeaad3c9</list_id>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
-            <sys_id>28e4cc2783dff21069b5b955eeaad349</sys_id>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>185721c48380c71469b5b955eeaad383</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>image</element>
+            <list_id display_value="x_1759267_wrm_workspace_options" element="NULL" name="x_1759267_wrm_workspace_options" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">985721c48380c71469b5b955eeaad37e</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
+            <sys_id>9c5721c48380c71469b5b955eeaad383</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,10 +117,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-03-04 03:45:17</sys_created_on>
+            <sys_created_on>2026-03-30 20:43:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>24e4482783dff21069b5b955eeaad3c9</sys_id>
+            <sys_id>985721c48380c71469b5b955eeaad37e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_1759267_wrm_workspace_options</sys_name>
             <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -113,7 +128,7 @@
             <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
             <sys_update_name>sys_ui_list_x_1759267_wrm_workspace_options_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-03-04 03:45:17</sys_updated_on>
+            <sys_updated_on>2026-03-30 20:43:41</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
