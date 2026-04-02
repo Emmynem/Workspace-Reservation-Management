@@ -32,9 +32,14 @@
     ga.getXMLAnswer(function(response) {
         if (response) {
             g_form.setValue('location', JSON.parse(response).location);
-			var image_tag_with_url = '<img src="https://dev184546.service-now.com/' + JSON.parse(response).image + '.iix" style="max-width:300px;"/>';
 
-			g_form.setValue('workspace_preview', image_tag_with_url);
+			if (JSON.parse(response).image) {
+				var image_tag_with_url = '<img src="https://dev184546.service-now.com/' + JSON.parse(response).image + '.iix" style="max-width:300px;"/>';
+
+				g_form.setValue('workspace_preview', image_tag_with_url);
+			} else {
+				g_form.setValue('workspace_preview', "");
+			}
         }
     });
 
@@ -118,7 +123,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1f4ca77f83afb69069b5b955eeaad350</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Auto-Populate Location from workspace</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -126,7 +131,7 @@
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_update_name>catalog_script_client_1f4ca77f83afb69069b5b955eeaad350</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 03:27:34</sys_updated_on>
+        <sys_updated_on>2026-04-02 00:37:58</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
