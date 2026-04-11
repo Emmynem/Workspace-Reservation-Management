@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.year = new Date().getFullYear();
+  c.workspace_type_count = $scope.data.workspace_type_count;
+  c.workspace_summary_list = $scope.data.workspace_summary_list;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>wrm_footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Workspace Reservation Footer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	var agg = new GlideAggregate("x_1759267_wrm_workspace_options");
+	agg.addAggregate("COUNT");
+	agg.groupBy("workspace_type");
+	agg.query();
+
+	data.workspace_summary = {};
+	data.workspace_type_count = agg.getRowCount();
+
+	while (agg.next()) {
+		var type = agg.getValue("workspace_type");
+		var name = agg.getDisplayValue("workspace_type");
+		var count = agg.getAggregate("COUNT");
+
+		if (!data.workspace_summary[type]) {
+			data.workspace_summary[type] = {};
+		}
+
+		data.workspace_summary[type].total = parseInt(count, 10);
+		data.workspace_summary[type].name = name;
+	}
+
+	data.workspace_summary_list = [];
+
+	for (type in data.workspace_summary) {
+		var item = data.workspace_summary[type];
+
+		data.workspace_summary_list.push({
+			workspace_type: type,
+			workspace_type_name: item.name,
+			total: item.total || 0
+		});
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 22:14:24</sys_created_on>
+        <sys_id>af57d51383444b1069b5b955eeaad329</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Workspace Reservation Footer</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sp_header_footer_af57d51383444b1069b5b955eeaad329</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:21:31</sys_updated_on>
+        <template><![CDATA[<section style="padding:60px 24px;background:#111827;">
+  <div style="max-width:700px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
+    <div>
+      <h2 style="font-size:22px;font-weight:800;color:#fff;margin:0 0 4px;">Need a workspace today?</h2>
+      <p style="font-size:14px;color:#9ca3af;margin:0;">Reserve in under a minute. No hassle.</p>
+    </div>
+    <a href="?id=wrm_reservation_request&sys_id=bde2d4b583ab765069b5b955eeaad347" style="text-decoration:none;padding:13px 28px;background:#4f46e5;color:#fff;font-size:14px;font-weight:600;border-radius:8px;white-space:nowrap;">Reserve a Space</a>
+  </div>
+</section>
+<footer style="background:#111827;border-top:1px solid rgba(255,255,255,0.06);padding:40px 24px 24px;">
+    <div style="max-width:1200px;margin:0 auto;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:32px;margin-bottom:32px;">
+        <div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <div style="width:28px;height:28px;background:#4f46e5;border-radius:7px;display:flex;align-items:center;justify-content:center;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </div>
+            <span style="font-size:15px;font-weight:800;color:#fff;">WorkSpace</span>
+          </div>
+          <p style="font-size:13px;color:#6b7280;line-height:1.6;margin:0;">Simple workspace reservations.<br>No clutter, no complexity.</p>
+        </div>
+        <div>
+          <h4 style="font-size:12px;font-weight:700;color:#9ca3af;margin:0 0 14px;text-transform:uppercase;letter-spacing:0.06em;">Pages</h4>
+          <a href="?id=wrm_index" style="display:block;text-decoration:none;font-size:13px;color:#6b7280;padding:4px 0;">Home</a>
+          <a href="?id=wrm_spaces" style="display:block;text-decoration:none;font-size:13px;color:#6b7280;padding:4px 0;">Browse Spaces</a>
+          <a href="?id=wrm_my_reservations" style="display:block;text-decoration:none;font-size:13px;color:#6b7280;padding:4px 0;">My Reservations</a>
+          <a href="?id=wrm_reservation_request&sys_id=bde2d4b583ab765069b5b955eeaad347" style="display:block;text-decoration:none;font-size:13px;color:#6b7280;padding:4px 0;">Reserve</a>
+        </div>
+        <div>
+          <h4 style="font-size:12px;font-weight:700;color:#9ca3af;margin:0 0 14px;text-transform:uppercase;letter-spacing:0.06em;">Spaces</h4>
+          <p style="font-size:13px;color:#6b7280;padding:4px 0;margin:0;" ng-repeat="space in c.workspace_summary_list">{{space.workspace_type_name}} ({{space.total}})</p>
+        </div>
+        <div>
+          <h4 style="font-size:12px;font-weight:700;color:#9ca3af;margin:0 0 14px;text-transform:uppercase;letter-spacing:0.06em;">Contact</h4>
+          <p style="font-size:13px;color:#6b7280;padding:4px 0;margin:0;">info@workspacehub.com</p>
+          <p style="font-size:13px;color:#6b7280;padding:4px 0;margin:0;">+234 800 000 0000</p>
+          <p style="font-size:13px;color:#6b7280;padding:4px 0;margin:0;">Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.06);padding-top:16px;">
+        <p style="margin:0;font-size:12px;color:#4b5563;">{{c.year}} WorkSpace Reservations. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>]]></template>
+    </sp_header_footer>
+</record_update>

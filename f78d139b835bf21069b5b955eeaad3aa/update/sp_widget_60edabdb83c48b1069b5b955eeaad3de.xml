@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.total_spaces = $scope.data.total_spaces;
+  c.workspace_summary_list = $scope.data.workspace_summary_list;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>wrm_spaces_alt</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Workspace Reservation Spaces Alt</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	var workspaceOptionsGr = new GlideRecord("x_1759267_wrm_workspace_options");
+	workspaceOptionsGr.addQuery("status", "available");
+	workspaceOptionsGr.query();
+	data.total_spaces = workspaceOptionsGr.getRowCount();
+
+	data.workspace_summary_list = [];
+
+	while (workspaceOptionsGr.next()) {
+		var type = workspaceOptionsGr.getValue("workspace_type");
+		var type_name = workspaceOptionsGr.getDisplayValue("workspace_type");
+		var name = workspaceOptionsGr.getValue("workspace_name");
+		var location = workspaceOptionsGr.getDisplayValue("location");
+		var status = workspaceOptionsGr.getDisplayValue("status");
+		var max_occupancy = workspaceOptionsGr.getDisplayValue("max_occupancy");
+		var image = workspaceOptionsGr.getDisplayValue("image");
+
+		data.workspace_summary_list.push({
+			workspace_name: name,
+			workspace_type_name: type_name,
+			location: location,
+			status: status,
+			capacity: max_occupancy,
+			image: image
+		});
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-10 08:51:53</sys_created_on>
+        <sys_id>60edabdb83c48b1069b5b955eeaad3de</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Workspace Reservation Spaces Alt</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sp_widget_60edabdb83c48b1069b5b955eeaad3de</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 09:02:28</sys_updated_on>
+        <template><![CDATA[<div style="padding:88px 24px 60px;max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:12px;">
+      <div>
+        <h1 style="font-size:26px;font-weight:800;margin:0 0 4px;color:#111827;">Available Spaces</h1>
+        <p style="font-size:14px;color:#9ca3af;margin:0;" id="result-count">Showing 5 of {{c.total_spaces}} spaces</p>
+      </div>
+      
+    </div>
+    <div class="space-row" style="display:flex;align-items:center;padding:16px 0;border-bottom:1px solid #f3f4f6;gap:16px;cursor:default;transition:background 0.15s;" ng-repeat="space in c.workspace_summary_list | filter:c.searchText | limitTo:5">
+      <div style="width:48px;height:48px;background:#FFFFFF;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+        <img ng-if="space.image" src="https://dev184546.service-now.com/{{space.image}}.iix" style="font-size:11px;font-weight:700;text-align:center;line-height:1.1;max-width:100%;height:auto;display:block;"/>
+      </div>
+
+      <div style="flex:1;min-width:0;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:2px;">
+          <span style="font-size:14px;font-weight:600;color:#111827;">{{space.workspace_name}}</span>
+          <span style="width:6px;height:6px;border-radius:50%;background:'{{space.status === 'available' ? '#16a34a' : '#dc2626'}}';flex-shrink:0;"></span>
+        </div>
+        <span style="font-size:12px;color:#9ca3af;">{{space.workspace_type_name}} &middot; {{space.capacity}} capacity &middot; {{space.location}}</span>
+      </div>
+
+      <div style="flex-shrink:0;min-width:90px;text-align:right;">
+        <a ng-if="space.status === 'Available'" href="?id=wrm_reservation_request&amp;sys_id=bde2d4b583ab765069b5b955eeaad347" style="text-decoration:none;padding:7px 14px;background:#111827;color:#fff;font-size:12px;font-weight:600;border-radius:6px;">Reserve</a>
+        <span ng-if="space.status !== 'Available'" style="padding:7px 14px;background:#f3f4f6;color:#9ca3af;font-size:12px;font-weight:500;border-radius:6px;">Booked</span>
+      </div>
+  	</div>
+    <div id="empty-state" ng-if="c.workspace_summary_list.length === 0" style="display:block;text-align:center;padding:60px 20px;">
+      <p style="font-size:15px;color:#9ca3af;margin:0 0 4px;">No spaces found.</p>
+      <p style="font-size:13px;color:#d1d5db;margin:0;">Try a different filter or search term.</p>
+    </div>
+  </div>]]></template>
+    </sp_widget>
+</record_update>

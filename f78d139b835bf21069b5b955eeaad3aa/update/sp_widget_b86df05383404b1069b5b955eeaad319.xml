@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope) {
+  /* widget controller */
+  var c = this;
+
+  c.total_spaces = $scope.data.total_spaces;
+  c.total_available_spaces = $scope.data.total_available_spaces;
+  c.workspace_type_count = $scope.data.workspace_type_count;
+  c.workspace_summary_list = $scope.data.workspace_summary_list;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>wrm_hero</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Workspace Reservation Hero</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	var workspaceGr = new GlideRecord("x_1759267_wrm_workspace_options");
+	workspaceGr.query();
+	data.total_spaces = workspaceGr.getRowCount();
+
+	var availableGr = new GlideRecord("x_1759267_wrm_workspace_options");
+	availableGr.addQuery("status", "available");
+	availableGr.query();
+	data.total_available_spaces = availableGr.getRowCount();
+
+	var agg = new GlideAggregate("x_1759267_wrm_workspace_options");
+	agg.addAggregate("COUNT");
+	agg.groupBy("workspace_type");
+	agg.query();
+
+	data.workspace_summary = {};
+	data.workspace_type_count = agg.getRowCount();
+
+	while (agg.next()) {
+		var type = agg.getValue("workspace_type");
+		var name = agg.getDisplayValue("workspace_type");
+		var count = agg.getAggregate("COUNT");
+
+		if (!data.workspace_summary[type]) {
+			data.workspace_summary[type] = {};
+		}
+
+		data.workspace_summary[type].total = parseInt(count, 10);
+		data.workspace_summary[type].name = name;
+	}
+
+	var availAgg = new GlideAggregate("x_1759267_wrm_workspace_options");
+	availAgg.addQuery("status", "available");
+	availAgg.addAggregate("COUNT");
+	availAgg.groupBy("workspace_type");
+	availAgg.query();
+
+	while (availAgg.next()) {
+		var _type = availAgg.getValue("workspace_type");
+		var _name = availAgg.getDisplayValue("workspace_type");
+		var _count = availAgg.getAggregate("COUNT");
+
+		if (!data.workspace_summary[_type]) {
+			data.workspace_summary[_type] = {};
+		}
+
+		data.workspace_summary[_type].available = parseInt(_count, 10);
+		data.workspace_summary[_type].name = _name;
+	}
+
+	data.workspace_summary_list = [];
+
+	for (type in data.workspace_summary) {
+		var item = data.workspace_summary[type];
+
+		data.workspace_summary_list.push({
+			workspace_type: type,
+			workspace_type_name: item.name,
+			total: item.total || 0,
+			available: item.available || 0
+		});
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 20:15:13</sys_created_on>
+        <sys_id>b86df05383404b1069b5b955eeaad319</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Workspace Reservation Hero</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sp_widget_b86df05383404b1069b5b955eeaad319</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-10 09:18:35</sys_updated_on>
+        <template><![CDATA[<section style="padding:120px 24px 60px;max-width:720px;margin:0 auto;">
+  <p style="font-size:14px;font-weight:600;color:#4f46e5;margin:0 0 14px;letter-spacing:0.02em;">WORKSPACE RESERVATIONS MADE SIMPLE</p>
+  <h1 style="font-size:clamp(30px,5vw,48px);font-weight:800;line-height:1.15;margin:0 0 18px;color:#111827;">
+    Book a desk, room, or office in seconds.
+  </h1>
+  <p style="font-size:17px;line-height:1.7;color:#6b7280;margin:0 0 28px;max-width:540px;">
+    Browse what's available, pick a date, and you're set. No back-and-forth emails, no waiting.
+  </p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="?id=wrm_spaces" style="text-decoration:none;padding:13px 24px;background:#111827;color:#fff;font-size:14px;font-weight:600;border-radius:8px;">Browse Spaces</a>
+    <a href="?id=wrm_reservation_request&amp;sys_id=bde2d4b583ab765069b5b955eeaad347" style="text-decoration:none;padding:13px 24px;background:#fff;color:#111827;font-size:14px;font-weight:600;border-radius:8px;border:1px solid #d1d5db;">Make a Reservation</a>
+  </div>
+</section>
+<section style="border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;background:#fafafa;">
+  <div style="max-width:1200px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;">
+    <div style="flex:1;min-width:140px;padding:28px 20px;text-align:center;border-right:1px solid #e5e7eb;">
+      <p style="margin:0;font-size:30px;font-weight:800;color:#111827;">{{c.total_spaces}}</p>
+      <p style="margin:4px 0 0;font-size:13px;font-weight:500;color:#9ca3af;">Total Spaces</p>
+    </div>
+    <div style="flex:1;min-width:140px;padding:28px 20px;text-align:center;border-right:1px solid #e5e7eb;">
+      <p style="margin:0;font-size:30px;font-weight:800;color:#16a34a;">{{c.total_available_spaces}}</p>
+      <p style="margin:4px 0 0;font-size:13px;font-weight:500;color:#9ca3af;">Available Now</p>
+    </div>
+    <div style="flex:1;min-width:140px;padding:28px 20px;text-align:center;border-right:1px solid #e5e7eb;">
+      <p style="margin:0;font-size:30px;font-weight:800;color:#4f46e5;">{{c.workspace_type_count}}</p>
+      <p style="margin:4px 0 0;font-size:13px;font-weight:500;color:#9ca3af;">Space Types</p>
+    </div>
+    <div style="flex:1;min-width:140px;padding:28px 20px;text-align:center;">
+      <p style="margin:0;font-size:30px;font-weight:800;color:#111827;">24/7</p>
+      <p style="margin:4px 0 0;font-size:13px;font-weight:500;color:#9ca3af;">Access</p>
+    </div>
+  </div>
+</section>
+<section style="padding:72px 24px;max-width:1200px;margin:0 auto;">
+  <div style="margin-bottom:40px;">
+    <h2 style="font-size:24px;font-weight:800;margin:0 0 6px;color:#111827;">What we offer</h2>
+    <p style="font-size:15px;color:#6b7280;margin:0;">Different spaces for different needs</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:#e5e7eb;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;" ng-if="c.workspace_summary_list.length > 0">
+
+    <div style="background:#fff;padding:32px 28px;" ng-repeat="space in c.workspace_summary_list">
+      <div style="width:40px;height:40px;background:#eef2ff;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      </div>
+      <h3 style="margin:0 0 6px;font-size:16px;font-weight:700;color:#111827;">{{space.workspace_type_name}}</h3>
+      <p style="margin:0 0 14px;font-size:13px;color:#9ca3af;line-height:1.6;">{{space.total}} workspaces are of the {{space.workspace_type_name}} type in total</p>
+      <span style="font-size:13px;font-weight:600;color:#4f46e5;">{{space.available}} available</span>
+    </div>
+
+    <div ng-if="c.workspace_summary_list.length === 0" class="text-muted">
+      No workspace found.
+    </div>
+
+  </div>
+</section>
+<section style="padding:72px 24px;background:#fafafa;border-top:1px solid #e5e7eb;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div style="margin-bottom:40px;">
+      <h2 style="font-size:24px;font-weight:800;margin:0 0 6px;color:#111827;">How it works</h2>
+      <p style="font-size:15px;color:#6b7280;margin:0;">Three steps, no hassle</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px;">
+      <div style="display:flex;gap:16px;">
+        <div style="width:36px;height:36px;background:#111827;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;">1</div>
+        <div>
+          <h3 style="margin:0 0 4px;font-size:15px;font-weight:700;color:#111827;">Pick a space</h3>
+          <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">Browse available desks, rooms, and offices. Filter by type or capacity.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;">
+        <div style="width:36px;height:36px;background:#111827;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;">2</div>
+        <div>
+          <h3 style="margin:0 0 4px;font-size:15px;font-weight:700;color:#111827;">Choose your slot</h3>
+          <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">Select a date, time, and how long you need it. See what's free in real time.</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;">
+        <div style="width:36px;height:36px;background:#111827;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0;">3</div>
+        <div>
+          <h3 style="margin:0 0 4px;font-size:15px;font-weight:700;color:#111827;">Show up</h3>
+          <p style="margin:0;font-size:13px;color:#9ca3af;line-height:1.6;">Get a confirmation, then walk in and start working. That's it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>]]></template>
+    </sp_widget>
+</record_update>

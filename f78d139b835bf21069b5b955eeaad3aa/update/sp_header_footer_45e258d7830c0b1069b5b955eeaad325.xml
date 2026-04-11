@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($scope, $window) {
+  /* widget controller */
+  var c = this;
+
+   c.fullname = $scope.data.fullname;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@media(max-width:768px){&#13;
+  #nav-links{display:none !important;}&#13;
+  #mobile-menu-btn{display:block !important;}&#13;
+}&#13;
+@media(max-width:480px){&#13;
+  section &gt; div[style*="border-right"]{border-right:none !important;}&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>wrm_header</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Workspace Reservation Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.fullname = gs.getUserDisplayName();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 16:56:55</sys_created_on>
+        <sys_id>45e258d7830c0b1069b5b955eeaad325</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Workspace Reservation Header</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sp_header_footer_45e258d7830c0b1069b5b955eeaad325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 22:24:28</sys_updated_on>
+        <template><![CDATA[<div>
+<nav id="navbar" style="position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.06);transition:box-shadow 0.3s;">
+    <div style="max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+      <a href="?id=wrm_index" style="text-decoration:none;display:flex;align-items:center;gap:8px;">
+        <div style="width:36px;height:36px;background:#4f46e5;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <span style="font-size:18px;font-weight:800;color:#1a1a2e;">Work<span style="color:#4f46e5;">Space</span></span>
+      </a>
+      <div id="nav-links" style="display:flex;align-items:center;gap:32px;">
+        <a href="?id=wrm_index" style="text-decoration:none;font-size:14px;font-weight:600;color:#4f46e5;">Home</a>
+        <a href="?id=wrm_spaces" style="text-decoration:none;font-size:14px;font-weight:500;color:#6b7280;">Spaces</a>
+        <a href="?id=wrm_my_reservations" style="text-decoration:none;font-size:14px;font-weight:500;color:#6b7280;">My Reservations</a>
+        <p style="text-decoration:none;font-size:14px;font-weight:600;color:#fff;background:#4f46e5;padding:10px 20px;border-radius:8px;">{{c.fullname}}</p>
+      </div>
+      <button id="mobile-menu-btn" onclick="let m = document.getElementById('mobile-menu');
+  m.style.display = m.style.display === 'block' ? 'none' : 'block';" style="display:none;background:none;border:none;cursor:pointer;padding:8px;">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1a1a2e" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" style="display:none;padding:16px 24px;border-top:1px solid rgba(0,0,0,0.06);background:#fff;" >
+      <a href="?id=wrm_index" style="display:block;padding:12px 0;text-decoration:none;font-size:15px;font-weight:600;color:#4f46e5;border-bottom:1px solid rgba(0,0,0,0.04);">Home</a>
+      <a href="?id=wrm_spaces" style="display:block;padding:12px 0;text-decoration:none;font-size:15px;font-weight:500;color:#6b7280;border-bottom:1px solid rgba(0,0,0,0.04);">Spaces</a>
+      <a href="?id=wrm_my_reservations" style="display:block;padding:12px 0;text-decoration:none;font-size:15px;font-weight:500;color:#6b7280;border-bottom:1px solid rgba(0,0,0,0.04);">My Reservations</a>
+      <p style="display:block;margin-top:8px;text-align:center;padding:12px;text-decoration:none;font-size:15px;font-weight:600;color:#fff;background:#4f46e5;border-radius:8px;">{{c.fullname}}</p>
+    </div>
+  </nav>
+</div>]]></template>
+    </sp_header_footer>
+</record_update>
