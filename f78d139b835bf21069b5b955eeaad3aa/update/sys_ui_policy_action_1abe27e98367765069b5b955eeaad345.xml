@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-03-11 01:54:47</sys_updated_on>
         <table>x_1759267_wrm_reservation_tracker</table>
-        <ui_policy display_value="Make core fields read-only – Condition: Reservation status is ANY value (runs always).">cb3ee7a98367765069b5b955eeaad3ea</ui_policy>
+        <ui_policy display_value="Make core fields read-only">cb3ee7a98367765069b5b955eeaad3ea</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>ignore</visible>

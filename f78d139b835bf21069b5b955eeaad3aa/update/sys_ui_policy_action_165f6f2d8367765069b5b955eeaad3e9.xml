@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-03-11 02:00:48</sys_updated_on>
         <table>x_1759267_wrm_reservation_tracker</table>
-        <ui_policy display_value="Hide reservation details when cancelled or no show – Condition: Reservation Status is no-show or cancelled.">730f272d8367765069b5b955eeaad350</ui_policy>
+        <ui_policy display_value="Hide reservation details when cancelled or no show">730f272d8367765069b5b955eeaad350</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>false</visible>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Import On Demand">087569808380c71469b5b955eeaad3c3</sc_cat_item>
+        <sc_cat_item display_value="Import On Demand Workspace Options">087569808380c71469b5b955eeaad3c3</sc_cat_item>
         <sc_category display_value="Workspace Reservations">c1135cb583ab765069b5b955eeaad367</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>

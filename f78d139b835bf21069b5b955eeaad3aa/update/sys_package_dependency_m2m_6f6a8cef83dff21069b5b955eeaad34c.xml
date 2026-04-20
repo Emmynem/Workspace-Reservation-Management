@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">d630a0e1212322105590b8323a2a6bf3</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-04 04:09:31</sys_created_on>
+        <sys_id>6f6a8cef83dff21069b5b955eeaad34c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-04 04:09:31</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-03-11 02:00:23</sys_updated_on>
         <table>x_1759267_wrm_reservation_tracker</table>
-        <ui_policy display_value="Show maintenance issue field when checked-out – Condition: Reservation status is Checked-out.">6aaf2b6d8367765069b5b955eeaad3b2</ui_policy>
+        <ui_policy display_value="Show maintenance issue field when checked-out">6aaf2b6d8367765069b5b955eeaad3b2</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>true</visible>

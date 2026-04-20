@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <advanced_placeholder_dimensions>false</advanced_placeholder_dimensions>
+        <async_load>false</async_load>
+        <async_load_device_type>desktop,tablet,mobile</async_load_device_type>
+        <async_load_trigger>viewport</async_load_trigger>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <placeholder_dimensions>{&#13;	"mobile": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"desktop": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	},&#13;	"tablet": {&#13;		"height": "250px",&#13;		"width": "100%"&#13;	}&#13;}</placeholder_dimensions>
+        <placeholder_dimensions_script><![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]></placeholder_dimensions_script>
+        <placeholder_template>&lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&lt;div ng-if="options.maxRowCount === 10"&gt;&lt;/div&gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&gt;
+	&lt;div class="skeleton-container"&gt;
+	&lt;!-- Header Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-header"&gt;&lt;/div&gt;
+	&lt;!-- Body Skeleton --&gt;
+	&lt;div class="skeleton-box skeleton-line"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line small"&gt;&lt;/div&gt;
+	&lt;div class="skeleton-box skeleton-line medium"&gt;&lt;/div&gt;
+&lt;/div&gt;</placeholder_template>
+        <preserve_placeholder_size>false</preserve_placeholder_size>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">a7f36e4b838cc71069b5b955eeaad3a5</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 08:39:29</sys_created_on>
+        <sys_id>55712ac3838cc71069b5b955eeaad323</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sp_instance_55712ac3838cc71069b5b955eeaad323</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 08:51:50</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div style=\"border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\">\r\n<h3 style=\"margin: 0 0 10px; font-family: Arial; color: #333;\">]]>🏢<![CDATA[Request Workspace</h3>\r\n<p style=\"color: #555; font-size: 14px;\">Order for an available workspace</p>\r\n<a style=\"display: inline-block; margin-top: 10px; padding: 10px 20px; background: #34A853; color: #fff; text-decoration: none; border-radius: 5px;\" href=\"?id=sc_cat_item&amp;sys_id=bde2d4b583ab765069b5b955eeaad347\">Order now ✍️</a></div>\r\n<p><br><br></p>",
+		"displayValue": "<div style=\"border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\">\n<h3 style=\"margin: 0 0 10px; font-family: Arial; color: #333;\">]]>🏢<![CDATA[Request Workspace</h3>\n<p style=\"color: #555; font-size: 14px;\">Order for an available workspace</p>\n<a style=\"display: inline-block; margin-top: 10px; padding: 10px 20px; background: #34A853; color: #fff; text-decoration: none; border-radius: 5px;\" href=\"?id=sc_cat_item&amp;sys_id=bde2d4b583ab765069b5b955eeaad347\">Order now ✍️</a></div>\n<p><br><br></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=55712ac3838cc71069b5b955eeaad323"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</application>
+        <file_path/>
+        <instance_id>d4865bae1bb57190699443f4bd4bcb20</instance_id>
+        <instance_name>dev184546</instance_name>
+        <name>sp_instance_55712ac3838cc71069b5b955eeaad323</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance"&gt;&lt;sp_instance action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced_placeholder_dimensions&gt;false&lt;/advanced_placeholder_dimensions&gt;&lt;async_load&gt;false&lt;/async_load&gt;&lt;async_load_device_type&gt;desktop,tablet,mobile&lt;/async_load_device_type&gt;&lt;async_load_trigger&gt;viewport&lt;/async_load_trigger&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;order&gt;1&lt;/order&gt;&lt;placeholder_dimensions&gt;{&amp;#13;	"mobile": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"desktop": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	},&amp;#13;	"tablet": {&amp;#13;		"height": "250px",&amp;#13;		"width": "100%"&amp;#13;	}&amp;#13;}&lt;/placeholder_dimensions&gt;&lt;placeholder_dimensions_script&gt;&lt;![CDATA[function evaluateConfig(options) { return {	"mobile": {		"height": "250px",		"width": "100%"	},	"desktop": {		"height": "250px",		"width": "100%"	},	"tablet": {		"height": "250px",		"width": "100%"	}}; }]]&gt;&lt;/placeholder_dimensions_script&gt;&lt;placeholder_template&gt;&amp;lt;!-- 
+	AngularJS template with configurable options.
+	Use the `options` object to control dynamic behavior.
+	Example: Display an element when max row count is 10:
+	&amp;lt;div ng-if="options.maxRowCount === 10"&amp;gt;&amp;lt;/div&amp;gt;
+	The `skeleton-container` class is used for loading placeholders.
+--&amp;gt;
+	&amp;lt;div class="skeleton-container"&amp;gt;
+	&amp;lt;!-- Header Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-header"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;!-- Body Skeleton --&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line small"&amp;gt;&amp;lt;/div&amp;gt;
+	&amp;lt;div class="skeleton-box skeleton-line medium"&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;&lt;/placeholder_template&gt;&lt;preserve_placeholder_size&gt;false&lt;/preserve_placeholder_size&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;a7f36e4b838cc71069b5b955eeaad3a5&lt;/sp_column&gt;&lt;sp_widget display_value="HTML"&gt;8679ef89cb21120000f8d856634c9c4f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-09 08:39:29&lt;/sys_created_on&gt;&lt;sys_id&gt;55712ac3838cc71069b5b955eeaad323&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm"&gt;f78d139b835bf21069b5b955eeaad3aa&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Workspace Reservation Management"&gt;f78d139b835bf21069b5b955eeaad3aa&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_55712ac3838cc71069b5b955eeaad323&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-09 08:51:50&lt;/sys_updated_on&gt;&lt;title/&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"html": {
+		"value": "&lt;div style=\"border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\"&gt;\r\n&lt;h3 style=\"margin: 0 0 10px; font-family: Arial; color: #333;\"&gt;]]&gt;🏢&lt;![CDATA[Request Workspace&lt;/h3&gt;\r\n&lt;p style=\"color: #555; font-size: 14px;\"&gt;Order for an available workspace&lt;/p&gt;\r\n&lt;a style=\"display: inline-block; margin-top: 10px; padding: 10px 20px; background: #34A853; color: #fff; text-decoration: none; border-radius: 5px;\" href=\"?id=sc_cat_item&amp;amp;sys_id=bde2d4b583ab765069b5b955eeaad347\"&gt;Order now ✍️&lt;/a&gt;&lt;/div&gt;\r\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;",
+		"displayValue": "&lt;div style=\"border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);\"&gt;\n&lt;h3 style=\"margin: 0 0 10px; font-family: Arial; color: #333;\"&gt;]]&gt;🏢&lt;![CDATA[Request Workspace&lt;/h3&gt;\n&lt;p style=\"color: #555; font-size: 14px;\"&gt;Order for an available workspace&lt;/p&gt;\n&lt;a style=\"display: inline-block; margin-top: 10px; padding: 10px 20px; background: #34A853; color: #fff; text-decoration: none; border-radius: 5px;\" href=\"?id=sc_cat_item&amp;amp;sys_id=bde2d4b583ab765069b5b955eeaad347\"&gt;Order now ✍️&lt;/a&gt;&lt;/div&gt;\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=55712ac3838cc71069b5b955eeaad323"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-442769701</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>22fbd24b834cc71069b5b955eeaad370</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 08:51:50</sys_created_on>
+        <sys_id>46442a8b838cc71069b5b955eeaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19d7170cb460000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 08:51:50</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>06442a8bb68cc710f55241f0bb432c60</update_guid>
+        <update_guid_history>06442a8bb68cc710f55241f0bb432c60:-442769701,dc14228b298cc710c36b1dd6ffa059af:163797233,1014228b278cc710eda1d3818edb8b92:-442769701,b404ae4b4a8cc710107a4a10f34a719e:163797233,7804ae4bbd8cc7107a3dd41a80874e86:86029884,0004ae4be58cc710ea2c57fd1cae8b0e:924538832,0ae3aa4b4d8cc710646a409bec6a26f1:-674711715,e7c36e0bc38cc710686c84fd1cac58df:-1198179223,11716e07648cc7107bca6952c8be200d:-1252420195</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f7071ddf83044b1069b5b955eeaad370</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-09 21:52:56</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>1f20147d1be94e5eb0f06f4d039f7259</sys_id>
+        <sys_metadata>55712ac3838cc71069b5b955eeaad323</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_scope_delete display_value="">2259c0a2c16e4ac88d92474dbe64a891</sys_scope_delete>
+        <sys_update_name>sp_instance_55712ac3838cc71069b5b955eeaad323</sys_update_name>
+        <sys_update_version display_value="sp_instance_55712ac3838cc71069b5b955eeaad323">46442a8b838cc71069b5b955eeaad361</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-09 21:52:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
