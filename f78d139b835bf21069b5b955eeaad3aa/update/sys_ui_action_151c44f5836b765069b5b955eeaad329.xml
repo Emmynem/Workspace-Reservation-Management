@@ -30,32 +30,39 @@
         <name>Needs Maintenance</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.update();
-
-var workspaceMaintenanceGroupGr = new GlideRecord("sys_user_group");
-workspaceMaintenanceGroupGr.addQuery("name", "Workspace Maintenance Team");
-workspaceMaintenanceGroupGr.query();
-
-var workspaceMaintenanceGroupSysId;
-
-if (workspaceMaintenanceGroupGr.next()) {
-	workspaceMaintenanceGroupSysId = workspaceMaintenanceGroupGr.sys_id;
+        <script><![CDATA[if (current.close_notes == "") {
+	action.setRedirectURL(current);
+	gs.addErrorMessage("Unable to proceed | Add Maintenance Issue");
+	g_form.setMandatory("close_notes", true);
 } else {
-	gs.addErrorMessage("Unable to get workspace maintenance team");
-}
+	current.update();
 
-var workspaceMaintenanceGr = new GlideRecord("x_1759267_wrm_workspace_maintenance");
-workspaceMaintenanceGr.initialize(); 
-workspaceMaintenanceGr.ticket_status = 'open'; 
-workspaceMaintenanceGr.workspace_status = 'in_maintenance'; 
-workspaceMaintenanceGr.date_reported = new GlideDate(); 
-workspaceMaintenanceGr.reservation = current.sys_id; 
-workspaceMaintenanceGr.workspace = current.workspace; 
-workspaceMaintenanceGr.issue_description = current.close_notes; 
-workspaceMaintenanceGr.assignment_group = workspaceMaintenanceGroupSysId; 
-workspaceMaintenanceGr.insert();
-action.setRedirectURL(current);
-gs.addInfoMessage("Reservation Checked out and needs maintenance");]]></script>
+	var workspaceMaintenanceGroupGr = new GlideRecord("sys_user_group");
+	workspaceMaintenanceGroupGr.addQuery("name", "Workspace Maintenance Team");
+	workspaceMaintenanceGroupGr.query();
+
+	var workspaceMaintenanceGroupSysId;
+
+	if (workspaceMaintenanceGroupGr.next()) {
+		workspaceMaintenanceGroupSysId = workspaceMaintenanceGroupGr.sys_id;
+	} else {
+		gs.addErrorMessage("Unable to get workspace maintenance team");
+	}
+
+	var workspaceMaintenanceGr = new GlideRecord("x_1759267_wrm_workspace_maintenance");
+	workspaceMaintenanceGr.initialize(); 
+	workspaceMaintenanceGr.ticket_status = 'open'; 
+	workspaceMaintenanceGr.workspace_status = 'in_maintenance'; 
+	workspaceMaintenanceGr.date_reported = new GlideDate(); 
+	workspaceMaintenanceGr.reservation = current.sys_id; 
+	workspaceMaintenanceGr.workspace = current.workspace; 
+	workspaceMaintenanceGr.issue_description = current.close_notes; 
+	workspaceMaintenanceGr.assignment_group = workspaceMaintenanceGroupSysId; 
+	workspaceMaintenanceGr.insert();
+	action.setRedirectURL(current);
+	gs.addInfoMessage("Reservation Checked out and needs maintenance");
+}
+]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -66,7 +73,7 @@ gs.addInfoMessage("Reservation Checked out and needs maintenance");]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>151c44f5836b765069b5b955eeaad329</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Needs Maintenance</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -74,7 +81,7 @@ gs.addInfoMessage("Reservation Checked out and needs maintenance");]]></script>
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_update_name>sys_ui_action_151c44f5836b765069b5b955eeaad329</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-26 12:17:10</sys_updated_on>
+        <sys_updated_on>2026-04-28 19:21:48</sys_updated_on>
         <table>x_1759267_wrm_reservation_tracker</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
