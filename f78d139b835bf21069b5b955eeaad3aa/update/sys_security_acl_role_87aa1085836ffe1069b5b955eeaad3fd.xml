@@ -4,15 +4,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-08 21:11:22</sys_created_on>
         <sys_id>87aa1085836ffe1069b5b955eeaad3fd</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1759267_wrm_workspace_maintenance.x_1759267_wrm.wrm_admin</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1759267_wrm_workspace_maintenance.x_1759267_wrm.workspace_maintenance_user</sys_name>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_security_acl display_value="x_1759267_wrm_workspace_maintenance">c3aa1085836ffe1069b5b955eeaad3f5</sys_security_acl>
         <sys_update_name>sys_security_acl_role_87aa1085836ffe1069b5b955eeaad3fd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-08 21:11:22</sys_updated_on>
-        <sys_user_role display_value="x_1759267_wrm.wrm_admin" name="x_1759267_wrm.wrm_admin">b1062f9783dbf21069b5b955eeaad34b</sys_user_role>
+        <sys_updated_on>2026-05-29 21:52:19</sys_updated_on>
+        <sys_user_role display_value="x_1759267_wrm.workspace_maintenance_user" name="x_1759267_wrm.workspace_maintenance_user">0106725383090b1069b5b955eeaad32d</sys_user_role>
     </sys_security_acl_role>
 </record_update>

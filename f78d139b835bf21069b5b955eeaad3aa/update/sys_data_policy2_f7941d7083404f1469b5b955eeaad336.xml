@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_data_policy2">
     <sys_data_policy2 action="INSERT_OR_UPDATE">
         <active>true</active>
-        <apply_import_set>true</apply_import_set>
+        <apply_import_set>false</apply_import_set>
         <apply_soap>true</apply_soap>
         <conditions/>
         <description>Ensure critical workspace fields are enforced as read-only across UI, imports, and web service calls to maintain data integrity.</description>
@@ -17,7 +17,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f7941d7083404f1469b5b955eeaad336</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Data Policies for Workspace Options Data Integrity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -25,6 +25,6 @@
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_update_name>sys_data_policy2_f7941d7083404f1469b5b955eeaad336</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-09 21:38:13</sys_updated_on>
+        <sys_updated_on>2026-06-11 16:40:55</sys_updated_on>
     </sys_data_policy2>
 </record_update>

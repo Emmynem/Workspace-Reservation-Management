@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Details Alt" section_id="5b0db7e883414b5069b5b955eeaad308" sys_domain="global" table="x_1759267_wrm_reservation_tracker" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_start</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>dfedf36c83414b5069b5b955eeaad38f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>5fedf36c83414b5069b5b955eeaad390</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_end</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>dbedf36c83414b5069b5b955eeaad391</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>5bedf36c83414b5069b5b955eeaad392</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>d7edf36c83414b5069b5b955eeaad393</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+            <sys_id>57edf36c83414b5069b5b955eeaad394</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Details Alt</caption>
+            <header>false</header>
+            <name>x_1759267_wrm_reservation_tracker</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-05-21 13:57:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5b0db7e883414b5069b5b955eeaad308</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1759267_wrm_reservation_tracker</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+            <sys_update_name>sys_ui_section_5b0db7e883414b5069b5b955eeaad308</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-05-21 13:57:39</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</application>
+        <file_path/>
+        <instance_id>d4865bae1bb57190699443f4bd4bcb20</instance_id>
+        <instance_name>dev184546</instance_name>
+        <name>sys_ui_section_5b0db7e883414b5069b5b955eeaad308</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Details Alt" section_id="5b0db7e883414b5069b5b955eeaad308" sys_domain="global" table="x_1759267_wrm_reservation_tracker" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>work_start</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>dfedf36c83414b5069b5b955eeaad38f</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>5fedf36c83414b5069b5b955eeaad390</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>work_end</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>dbedf36c83414b5069b5b955eeaad391</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>5bedf36c83414b5069b5b955eeaad392</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>opened_by</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>d7edf36c83414b5069b5b955eeaad393</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>short_description</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 14:01:28</sys_created_on><sys_id>57edf36c83414b5069b5b955eeaad394</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Details Alt" display_value="Details Alt" name="x_1759267_wrm_reservation_tracker" sys_domain="global" view="Default view">5b0db7e883414b5069b5b955eeaad308</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 14:01:28</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Details Alt</caption><header>false</header><name>x_1759267_wrm_reservation_tracker</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-05-21 13:57:39</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b0db7e883414b5069b5b955eeaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1759267_wrm_reservation_tracker</sys_name><sys_overrides/><sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope><sys_update_name>sys_ui_section_5b0db7e883414b5069b5b955eeaad308</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-05-21 13:57:39</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>1024920318</payload_hash>
+        <record_name>Reservation Tracker</record_name>
+        <reverted_from/>
+        <source>0bf4c5f28350031069b5b955eeaad3b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-21 14:01:28</sys_created_on>
+        <sys_id>dbedf36c83414b5069b5b955eeaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19e4ad75c580000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-21 14:01:28</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>dbedf36c4a414b509b5c647947c84f97</update_guid>
+        <update_guid_history>dbedf36c4a414b509b5c647947c84f97:1024920318,af0db7e8c1414b502e53c4f57f82ac41:-503681060</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-05-21 17:19:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>4af55587d18a4e7ab0de04e21ae7e111</sys_id>
+        <sys_metadata>5b0db7e883414b5069b5b955eeaad308</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Details Alt</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_parent display_value="Reservation Tracker">f083918483e73a1069b5b955eeaad365</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_scope_delete display_value="">2259c0a2c16e4ac88d92474dbe64a891</sys_scope_delete>
+        <sys_update_name>sys_ui_section_5b0db7e883414b5069b5b955eeaad308</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_5b0db7e883414b5069b5b955eeaad308">dbedf36c83414b5069b5b955eeaad398</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-05-21 17:19:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

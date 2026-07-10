@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="DELETE">
+        <disabled>true</disabled>
+        <field>workspace_name</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-26 14:46:35</sys_created_on>
+        <sys_data_policy display_value="Enforce data integrity">ce28d7ec836c8f1069b5b955eeaad395</sys_data_policy>
+        <sys_id>a668132083ac8f1069b5b955eeaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspace_name</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_update_name>sys_data_policy_rule_a668132083ac8f1069b5b955eeaad357</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 14:46:35</sys_updated_on>
+        <table>x_1759267_wrm_workspace_options</table>
+    </sys_data_policy_rule>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</application>
+        <file_path/>
+        <instance_id>d4865bae1bb57190699443f4bd4bcb20</instance_id>
+        <instance_name>dev184546</instance_name>
+        <name>sys_data_policy_rule_a668132083ac8f1069b5b955eeaad357</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule"><sys_data_policy_rule action="INSERT_OR_UPDATE"><disabled>true</disabled><field>workspace_name</field><mandatory>ignore</mandatory><sys_class_name>sys_data_policy_rule</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-26 14:46:35</sys_created_on><sys_data_policy display_value="Enforce data integrity">ce28d7ec836c8f1069b5b955eeaad395</sys_data_policy><sys_id>a668132083ac8f1069b5b955eeaad357</sys_id><sys_mod_count>0</sys_mod_count><sys_name>workspace_name</sys_name><sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package><sys_policy/><sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope><sys_update_name>sys_data_policy_rule_a668132083ac8f1069b5b955eeaad357</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-26 14:46:35</sys_updated_on><table>x_1759267_wrm_workspace_options</table></sys_data_policy_rule></record_update>]]></payload>
+        <payload_hash>2093747111</payload_hash>
+        <record_name>workspace_name</record_name>
+        <reverted_from/>
+        <source>0bf4c5f28350031069b5b955eeaad3b1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-26 14:46:35</sys_created_on>
+        <sys_id>ec88d32083ac8f1069b5b955eeaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dca41b0b60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 14:46:35</sys_updated_on>
+        <type>Data Policy Rule</type>
+        <update_guid>ac88d32028ac8f10707dc847d0f57ca8</update_guid>
+        <update_guid_history>ac88d32028ac8f10707dc847d0f57ca8:2093747111</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-26 14:48:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_data_policy_rule">sys_data_policy_rule</sys_db_object>
+        <sys_id>223e59fa125549268779895551767824</sys_id>
+        <sys_metadata>a668132083ac8f1069b5b955eeaad357</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>workspace_name</sys_name>
+        <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
+        <sys_scope_delete display_value="">2259c0a2c16e4ac88d92474dbe64a891</sys_scope_delete>
+        <sys_update_name>sys_data_policy_rule_a668132083ac8f1069b5b955eeaad357</sys_update_name>
+        <sys_update_version display_value="sys_data_policy_rule_a668132083ac8f1069b5b955eeaad357">ec88d32083ac8f1069b5b955eeaad3a9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-26 14:48:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

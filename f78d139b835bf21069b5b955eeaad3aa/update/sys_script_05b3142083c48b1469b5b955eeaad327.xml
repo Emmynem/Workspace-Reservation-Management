@@ -29,21 +29,37 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
 
-	// Add your code here
-	
-	// Initialize GlideRecord for the Workspace Option table
-	var workspaceGr = new GlideRecord("x_1759267_wrm_workspace_options");
+    // Add your code here
 
-	if (workspaceGr.get("sys_id", current.workspace)) {
-		// Update value to under_maintenance
-		workspaceGr.status = "under_maintenance";
-		workspaceGr.update();
-		return;
-	} else {
-		gs.error("BR - Workspace Maintenance → Options (Open): Unable to get current workspace details to update value");
-	}
+    // Initialize GlideRecord for the Workspace Option table
+    var workspaceGr = new GlideRecord("x_1759267_wrm_workspace_options");
+
+    if (workspaceGr.get("sys_id", current.workspace)) {
+        // Update value to under_maintenance
+        workspaceGr.status = "under_maintenance";
+        workspaceGr.update();
+        return;
+    } else {
+        gs.error("BR - Workspace Maintenance → Options (Open): Unable to get current workspace details to update value");
+    }
+
+    // var workspaceGR = new GlideRecord(‘table_name’);
+    // var mainStatus =
+    //     current.getValue(‘maintenance_ticket_status’);
+    // var mainWorkspaceStatus =
+    //     current.getValue(‘maintenance_workspace_status’);
+    // if(mainStatus == ‘open’ && mainWorkspaceStatus == ‘in_maintenance’) {
+    //     workspaceGR.status = unavailable;
+    // } else(mainStatus == ‘closed’ && mainWorkspaceStatus == ‘available’) {
+    //     workspaceGR.status = available;
+    // } else(mainStatus == ‘closed’ && mainWorkspaceStatus == ‘decomissioned’) {
+    //     workspaceGR.status = decommissioned;
+    // } else(mainStatus == ‘closed’ && mainWorkspaceStatus == ‘available’) {
+    //     workspaceGR.status = available;
+    // }
+    // workspaceGR.update();
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -51,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05b3142083c48b1469b5b955eeaad327</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Workspace Maintenance → Options (Open)</sys_name>
         <sys_overrides/>
         <sys_package display_value="Workspace Reservation Management" source="x_1759267_wrm">f78d139b835bf21069b5b955eeaad3aa</sys_package>
@@ -59,7 +75,7 @@
         <sys_scope display_value="Workspace Reservation Management">f78d139b835bf21069b5b955eeaad3aa</sys_scope>
         <sys_update_name>sys_script_05b3142083c48b1469b5b955eeaad327</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-04-01 04:04:55</sys_updated_on>
+        <sys_updated_on>2026-06-18 18:17:41</sys_updated_on>
         <template>workspace_status=^EQ</template>
         <when>after</when>
     </sys_script>
